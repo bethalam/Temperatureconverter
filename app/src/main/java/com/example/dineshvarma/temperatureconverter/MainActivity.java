@@ -71,22 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void acclick(View view) {
-        vibrator.vibrate(50);
-        if (v1){
-            value1.setText("0");
-            state1 = false;
-            dot1 = false;
-            num1 = false;
-
-        }else {
-            value2.setText("0");
-            state2 = false;
-            dot2 = false;
-            num2 = false;
-
-        }
-        result();
-
+       ac();
 
     }
 
@@ -211,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
         v1 = true;
         value1.setTextColor(Color.parseColor("#FF5722"));
         value2.setTextColor(Color.parseColor("#000000"));
-
+        ac();
 
     }
 
@@ -220,6 +205,7 @@ public class MainActivity extends AppCompatActivity {
         v1 = false;
         value2.setTextColor(Color.parseColor("#FF5722"));
         value1.setTextColor(Color.parseColor("#000000"));
+        ac();
     }
     public void result() {
         Double ans;
@@ -269,5 +255,23 @@ public class MainActivity extends AppCompatActivity {
                 value1.setText("");
             }
         }
+    }
+    public void ac(){
+        vibrator.vibrate(50);
+        if (v1){
+            value1.setText("0");
+            state1 = false;
+            dot1 = false;
+            num1 = false;
+
+        }else {
+            value2.setText("0");
+            state2 = false;
+            dot2 = false;
+            num2 = false;
+
+        }
+        result();
+
     }
 }
