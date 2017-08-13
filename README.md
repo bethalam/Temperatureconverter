@@ -1,2 +1,2 @@
 # Temperatureconverter
-![alt text](device-1017-08-13-133447.png "")
+<img src="screenshots/screenshoot1.png" width="320"/><img src="screenshots/screenshoot2.png" width="320"/>
